@@ -3,6 +3,7 @@
 Esta app ase uso de la [API Pública](https://rickandmortyapi.com/) de Rick & Morty
 Incluye libreria Materia UI
 ## HOST
+https://amdev-rickandmorty.web.app/
 ## DETALLES
 - Permite filtrar por personajes, episodios o lugares
 - Renderizado dinamico de cards mediante datos de la api
