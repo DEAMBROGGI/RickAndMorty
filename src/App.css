@@ -1,0 +1,259 @@
+header{
+  position: fixed;
+  top: 0;
+  background-color: blueviolet !important;
+  height: 140px;
+}
+.homeTitle{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: parpadeo !important;
+  animation-duration: 3s !important;
+  animation-timing-function: ease !important;
+}
+.cardContainer{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 15, 15) !important;
+}
+.subtitleNavBar{
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  color: white !important;
+  text-align: center;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+
+}
+.pagination{
+  position:relative;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 70px !important;
+}
+@media (min-width: 600px) and (max-width:900px){
+  .pagination :nth-child(1){
+    top:15px !important;
+  }
+}
+.MuiPaginationItem-textPrimary.Mui-selected{
+  background-color: rgb(61, 6, 112) !important;
+}
+.MuiButton-root:hover{
+  color: rgb(61, 6, 112) !important;
+background-color: rgb(198, 158, 235)!important;
+}
+.MuiPaginationItem-sizeLarge{
+  color: white !important;
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important; 
+}
+.typeSelected{
+  border-bottom: 2px solid rgb(61, 6, 112) !important;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+
+  animation-name: parpadeo !important;
+  animation-duration: 3s !important;
+  animation-timing-function: ease !important;
+  -webkit-animation-name:parpadeo !important;
+  -webkit-animation-duration: 5s !important;
+  -webkit-animation-timing-function: ease !important;
+}
+
+@keyframes parpadeo {  
+  0% {opacity: 0;}
+  2% { opacity: 0.3;}
+  3% {opacity: 0.1;}
+  5% {opacity: 0.4;}
+  7% {opacity: 0.1;}
+  8% {opacity: 0.9;}
+  10% {opacity: 0.1;}
+  15% {opacity: 0.6;}
+  19% {opacity: 0.1;}
+  8% {opacity: 0.4;}
+  10% {opacity: 0.1;}
+  19% {opacity: 0;}
+  20% {opacity: 1;}
+  22% {opacity: 0.5;}
+  23% {opacity: 0.1;}
+  28% {opacity: 0.3;}
+  30% {opacity: 1;}
+  33% {opacity: 0.1;}
+  37% {opacity: 0.7;}
+  38% {opacity: 0.1;}
+  41% {opacity: 0.4;}
+  55% {opacity: 0.1;}
+  56% {opacity: 1;}
+  57% {opacity: 0.9;}
+  59% {opacity: 1;}
+  61% {opacity: 0.1;}
+  67% {opacity: 0.5;}
+  69% {opacity: 0.3;}
+  71% {opacity: 0.6;}
+  100% {opacity: 0;}
+
+}  
+  
+.MuiButton-text{
+  padding: 6px 8px !important;
+  border-radius: 4px !important;
+}
+.btnNav{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; 
+  transition: 0.3s all !important;
+  border-radius: 150px !important;
+}
+.btnNav:hover{
+  background: blueviolet!important;
+  color: white !important;
+  text-shadow:
+  0 0 5px #fff,
+  0 0 10px #fff,
+  0 0 20px #fff,
+  0 0 40px #0ff,
+  0 0 80px #0ff,
+  0 0 90px #0ff,
+  0 0 100px #0ff,
+  0 0 150px #0ff;
+}
+
+/*CONTROL DE MENU RESPONSIVE Y AVATARS*/
+.menuResponsive{
+  display: grid !important; 
+  height: auto !important;
+  min-height: auto !important;
+  margin: 10px !important;
+  background-color:rgb(198, 158, 235)!important ; 
+}
+.compareResponsive{
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    width: 100%;
+    height: 30px !important;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.compareResponsive :nth-child(1){
+  transform: translateX(170%);
+  z-index: 10;
+}
+.compareResponsive :nth-child(2){
+  transform: translateX(5%);
+  z-index: 9;
+}
+.compareResponsive :nth-child(3){
+  transform: translateX(-160%);
+  z-index: 8;
+}.imgCharResponsive{
+  width: 33%;
+  height: 30px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 35px;
+  box-shadow: 1px 5px 20px rgb(61, 6, 112);
+  border: 1px solid rgb(61, 6, 112);;
+}
+/*CONTROL DE FUENTE Y FONDO MENU RESPONSIVE*/
+.css-1uwgr7b-MuiTypography-root{
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  color:rgb(61, 6, 112)
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
+  background-color: rgb(198, 158, 235)!important;
+}
+.cardsContainer{
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.removeBtn{
+  background-color: rgb(198, 158, 235) !important;
+  color:black !important;
+}
+.removeBtn:hover{
+  background-color: blueviolet !important;
+  color:white !important;
+}
+/*AVATARS DE COMPARE*/
+.compare{
+position: absolute;
+bottom: 0;
+right: 2%;
+width: 210px;
+height: 70px;
+display: flex;
+flex-direction: row;
+cursor: pointer;
+}
+.compare :nth-child(1){
+  transform: translateX(200%);
+  z-index: 10;
+}
+.compare :nth-child(2){
+  transform: translateX(60%);
+  z-index: 9;
+}
+.compare :nth-child(3){
+  transform: translateX(-80%);
+  z-index: 8;
+}
+
+.imgChar{
+  width: 33%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 35px;
+  box-shadow: 1px 5px 20px rgb(61, 6, 112);
+  border: 1px solid rgb(61, 6, 112);;
+}
+/*CONTROLAR COMPORTAMIENTO DE NAVBAR PARA QUE MANTENGA SIEMPRE EL MISMO ALTO*/
+@media (min-width: 0px) and (orientation: landscape){
+.css-1cndkqf-MuiToolbar-root{
+  min-height: 64px !important;
+}
+}
+.css-1cndkqf-MuiToolbar-root{
+  min-height: 64px !important;
+}
+/*ESCONDER COMPARE EN MENU RESPONSIVE EN <600PX*/
+@media (min-width: 600px){
+.css-1uh4ai7-MuiButtonBase-root-MuiMenuItem-root {
+    display: none !important;
+}
+}
